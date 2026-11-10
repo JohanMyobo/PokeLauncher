@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PokéLauncher — Fiche Platine</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0F1115}
+a{color:#F5C542}a:hover{color:#FFD970}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #0F1115; color: #E8EAF0; font-family: Inter, system-ui, sans-serif; font-size: 14px">
+
+  <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 24px; border-bottom: 1px solid #232833; background: #12151B">
+    <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; color: #E8EAF0; text-decoration: none">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="#F5C542" stroke-width="2.5"></circle><path d="M2 14h24" stroke="#F5C542" stroke-width="2.5"></path><circle cx="14" cy="14" r="4" fill="#12151B" stroke="#F5C542" stroke-width="2.5"></circle></svg>
+      <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">PokéLauncher</span>
+    </a>
+    <a href="Main.dc.html" style="margin-left: 12px; color: #B4BCC9; text-decoration: none; display: flex; align-items: center; gap: 6px; min-height: 44px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+      Bibliothèque
+    </a>
+    <span style="color: #6B7383" aria-hidden="true">/</span>
+    <span style="color: #E8EAF0">Génération 4 · Platine</span>
+  </header>
+
+  <main style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 32px 24px 64px; display: flex; flex-direction: column; gap: 32px">
+
+    <section aria-label="Jeu" style="display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+      <div style="flex: 0 0 240px; height: 320px; border-radius: 16px; background: #7D8590; color: #FFFFFF; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(255,255,255,0.08)">
+        <span style="align-self: flex-start; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 6px; background: rgba(0,0,0,0.22)">DS</span>
+        <div>
+          <div style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85">Pokémon</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; font-weight: 700; line-height: 1">Platine</div>
+        </div>
+      </div>
+
+      <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px; justify-content: center">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2">Génération 4 · Nintendo DS · 2009</div>
+        <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; letter-spacing: -0.01em">Pokémon Platine</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span style="font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 6px; background: #17321F; color: #7EE2A0">ROM FR · SHA-1 vérifié</span>
+          <span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 6px; background: #1F2430; color: #C9D0DB">Émulateur : melonDS</span>
+          <span style="font-size: 12px; font-weight: 500; padding: 5px 10px; border-radius: 6px; background: #1F2430; color: #C9D0DB">3 variantes</span>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 8px">
+          <button type="button" style="height: 52px; padding: 0 28px; border-radius: 12px; border: 0; background: #F5C542; color: #15130B; font: inherit; font-weight: 700; font-size: 17px; display: flex; align-items: center; gap: 10px; cursor: pointer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg>
+            Jouer
+          </button>
+          <label style="display: flex; flex-direction: column; gap: 4px">
+            <span style="position: absolute; left: -9999px">Variante à lancer</span>
+            <select style="height: 52px; padding: 0 14px; border-radius: 12px; border: 1px solid #2A303C; background: #1A1E26; color: #E8EAF0; font: inherit; font-weight: 500; min-width: 220px">
+              <option>Original (FR)</option>
+              <option>Randomizer · seed 4821</option>
+            </select>
+          </label>
+          <button type="button" style="height: 52px; padding: 0 18px; border-radius: 12px; border: 1px solid #2A303C; background: transparent; color: #E8EAF0; font: inherit; font-weight: 500; cursor: pointer">Ouvrir dans PKHeX</button>
+          <button type="button" aria-label="Ouvrir le dossier de sauvegardes" style="width: 52px; height: 52px; border-radius: 12px; border: 1px solid #2A303C; background: transparent; color: #E8EAF0; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          </button>
+        </div>
+        <div style="color: #9AA3B2; font-size: 13px">Un backup de la sauvegarde est fait automatiquement avant chaque lancement.</div>
+      </div>
+    </section>
+
+    <section aria-label="Progression" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+      <div style="padding: 20px; border-radius: 14px; background: #161A21; border: 1px solid #232833; display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2">Badges</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">5 / 8</div>
+        <div style="display: flex; gap: 6px" aria-hidden="true">
+          <span style="width: 18px; height: 18px; border-radius: 50%; background: #F5C542"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; background: #F5C542"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; background: #F5C542"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; background: #F5C542"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; background: #F5C542"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #3A4150; box-sizing: border-box"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #3A4150; box-sizing: border-box"></span>
+          <span style="width: 18px; height: 18px; border-radius: 50%; border: 2px solid #3A4150; box-sizing: border-box"></span>
+        </div>
+      </div>
+      <div style="padding: 20px; border-radius: 14px; background: #161A21; border: 1px solid #232833; display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2">Pokédex de Sinnoh</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">87 <span style="font-size: 16px; color: #9AA3B2; font-weight: 500">capturés · 112 vus</span></div>
+        <div style="height: 6px; border-radius: 3px; background: #262B36"><div style="width: 41%; height: 6px; border-radius: 3px; background: #7EE2A0"></div></div>
+      </div>
+      <div style="padding: 20px; border-radius: 14px; background: #161A21; border: 1px solid #232833; display: flex; flex-direction: column; gap: 12px">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2">Temps de jeu</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">34 h 12</div>
+        <div style="color: #9AA3B2; font-size: 13px">Lu dans la sauvegarde · Original (FR)</div>
+      </div>
+    </section>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+      <section aria-labelledby="variantes-titre" style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px">
+          <h2 id="variantes-titre" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">Variantes</h2>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap">
+            <button type="button" style="height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid #2A303C; background: #1A1E26; color: #E8EAF0; font: inherit; font-weight: 500; cursor: pointer">+ Ajouter un patch</button>
+            <button type="button" style="height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid #2A303C; background: #1A1E26; color: #E8EAF0; font: inherit; font-weight: 500; cursor: pointer">Générer un randomizer</button>
+          </div>
+        </div>
+
+        <div style="padding: 18px; border-radius: 14px; background: #161A21; border: 1px solid #F5C542; display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+          <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px">
+            <div style="font-weight: 600; font-size: 15px">Original (FR)</div>
+            <div style="color: #9AA3B2; font-size: 13px">ROM d'origine, jamais modifiée · 2 emplacements de sauvegarde</div>
+          </div>
+          <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px; background: #3A3215; color: #F5C542">Par défaut</span>
+        </div>
+
+        <div style="padding: 18px; border-radius: 14px; background: #161A21; border: 1px solid #232833; display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+          <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px">
+            <div style="font-weight: 600; font-size: 15px">Randomizer · seed 4821</div>
+            <div style="color: #9AA3B2; font-size: 13px">Universal Pokémon Randomizer ZX · starters, sauvages et dresseurs mélangés · créé le 08/11/2026</div>
+          </div>
+          <button type="button" style="height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid #2A303C; background: transparent; color: #E8EAF0; font: inherit; cursor: pointer">Jouer</button>
+        </div>
+
+        <div style="padding: 18px; border-radius: 14px; background: #1E1612; border: 1px solid #6B3A1C; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+            <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-weight: 600; font-size: 15px">Renegade Platinum</div>
+              <div style="color: #B4BCC9; font-size: 13px">Patch xdelta · base attendue : Platine US (EN)</div>
+            </div>
+            <span style="font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 6px; background: #3A2614; color: #F7B57A">Non appliqué</span>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: flex-start; color: #F7C9A0; font-size: 13px; line-height: 1.5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M12 9v4M12 17h.01"></path><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path></svg>
+            <span>Ta ROM de Platine est la version française. Ce patch attend la version américaine (anglais), le hash ne correspond pas. Ajoute une ROM Platine US dans le dossier pour pouvoir l'appliquer.</span>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="saves-titre" style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px">
+          <h2 id="saves-titre" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">Sauvegardes</h2>
+          <span style="color: #9AA3B2; font-size: 13px">Original (FR)</span>
+        </div>
+        <div style="border-radius: 14px; background: #161A21; border: 1px solid #232833; display: flex; flex-direction: column">
+          <sc-for list="{{ saves }}" as="s" hint-placeholder-count="5">
+            <div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #232833">
+              <div style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+                <span style="font-weight: 500">{{s.label}}</span>
+                <span style="color: #9AA3B2; font-size: 12px">{{s.meta}}</span>
+              </div>
+              <button type="button" style="height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid #2A303C; background: transparent; color: #C9D0DB; font: inherit; font-size: 13px; cursor: pointer">{{s.action}}</button>
+            </div>
+          </sc-for>
+          <div style="padding: 14px 18px; color: #9AA3B2; font-size: 13px">Synchro NAS : désactivée · <a href="Reglages.dc.html">Configurer</a></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1380}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      saves: [
+        { label: 'Sauvegarde actuelle', meta: 'Modifiée le 08/11/2026 à 23:05 · 512 Ko', action: 'Exporter' },
+        { label: 'Backup auto', meta: 'Avant la session du 08/11/2026 à 21:42', action: 'Restaurer' },
+        { label: 'Backup auto', meta: 'Avant la session du 06/11/2026 à 20:10', action: 'Restaurer' },
+        { label: 'Backup auto', meta: 'Avant la session du 02/11/2026 à 18:55', action: 'Restaurer' },
+        { label: 'Avant la Ligue (manuel)', meta: 'Créé le 01/11/2026 · épinglé', action: 'Restaurer' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

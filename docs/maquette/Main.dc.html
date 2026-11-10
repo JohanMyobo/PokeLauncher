@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PokéLauncher — Bibliothèque</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0F1115}
+a{color:#F5C542}a:hover{color:#FFD970}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #0F1115; color: #E8EAF0; font-family: Inter, system-ui, sans-serif; font-size: 14px">
+
+  <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 24px; border-bottom: 1px solid #232833; background: #12151B">
+    <div style="display: flex; align-items: center; gap: 10px; margin-right: 12px">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="#F5C542" stroke-width="2.5"></circle><path d="M2 14h24" stroke="#F5C542" stroke-width="2.5"></path><circle cx="14" cy="14" r="4" fill="#12151B" stroke="#F5C542" stroke-width="2.5"></circle></svg>
+      <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.01em">PokéLauncher</span>
+    </div>
+    <label style="flex: 1 1 260px; max-width: 460px; display: flex; align-items: center; gap: 8px; background: #1A1E26; border: 1px solid #2A303C; border-radius: 10px; padding: 0 12px; height: 40px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9AA3B2" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <span style="position: absolute; left: -9999px">Rechercher un jeu</span>
+      <input type="search" placeholder="Rechercher un jeu, une variante…" style="flex: 1; background: transparent; border: 0; outline: none; color: #E8EAF0; font: inherit">
+    </label>
+    <div style="display: flex; gap: 10px; margin-left: auto">
+      <button type="button" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid #2A303C; background: #1A1E26; color: #E8EAF0; font: inherit; font-weight: 500; display: flex; align-items: center; gap: 8px; cursor: pointer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 3v6h-6"></path></svg>
+        Rescanner les ROMs
+      </button>
+      <a href="Reglages.dc.html" aria-label="Réglages" style="width: 44px; height: 40px; border-radius: 10px; border: 1px solid #2A303C; background: #1A1E26; color: #E8EAF0; display: flex; align-items: center; justify-content: center">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"></path></svg>
+      </a>
+    </div>
+  </header>
+
+  <div style="display: flex; flex-wrap: wrap; align-items: flex-start">
+
+    <nav aria-label="Navigation" style="flex: 1 1 220px; max-width: 100%; box-sizing: border-box; padding: 24px 16px; display: flex; flex-direction: column; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; background: #1F2430; color: #E8EAF0; text-decoration: none; font-weight: 600">Bibliothèque</a>
+        <a href="Fiche.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: #B4BCC9; text-decoration: none">Sauvegardes</a>
+        <a href="Fiche.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: #B4BCC9; text-decoration: none">Romhacks &amp; variantes</a>
+        <a href="Reglages.dc.html" style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; color: #B4BCC9; text-decoration: none">Réglages</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2; padding: 0 12px 6px">Générations</div>
+        <sc-for list="{{ gens }}" as="g" hint-placeholder-count="5">
+          <a href="#{{g.id}}" style="display: flex; justify-content: space-between; align-items: center; padding: 9px 12px; border-radius: 8px; color: #C9D0DB; text-decoration: none">
+            <span>{{g.short}}</span>
+            <span style="font-size: 12px; color: #9AA3B2">{{g.count}}</span>
+          </a>
+        </sc-for>
+      </div>
+      <div style="margin: 0 12px; padding: 14px; border-radius: 10px; background: #161A21; border: 1px solid #232833; display: flex; flex-direction: column; gap: 8px">
+        <div style="font-size: 12px; color: #9AA3B2">ROMs reconnues</div>
+        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">17 / 20</div>
+        <div style="height: 6px; border-radius: 3px; background: #262B36"><div style="width: 85%; height: 6px; border-radius: 3px; background: #F5C542"></div></div>
+        <div style="font-size: 12px; color: #9AA3B2">Identifiées par SHA-1</div>
+      </div>
+    </nav>
+
+    <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 24px 32px 64px; display: flex; flex-direction: column; gap: 40px">
+
+      <section aria-label="Reprendre" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 24px; border-radius: 16px; background: #161A21; border: 1px solid #232833">
+        <div style="width: 96px; height: 128px; border-radius: 10px; background: #7D8590; flex: none; display: flex; align-items: flex-end; padding: 10px; box-sizing: border-box; color: #FFFFFF; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px">Platine</div>
+        <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 6px">
+          <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9AA3B2">Reprendre</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700">Pokémon Platine</div>
+          <div style="color: #B4BCC9">Variante : Original (FR) · Dernière session il y a 2 jours · 34 h 12 · Badges 5/8</div>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap">
+          <a href="Fiche.dc.html" style="height: 48px; padding: 0 24px; border-radius: 12px; background: #F5C542; color: #15130B; font-weight: 700; font-size: 16px; display: flex; align-items: center; gap: 10px; text-decoration: none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"></path></svg>
+            Jouer
+          </a>
+          <a href="Fiche.dc.html" style="height: 48px; padding: 0 18px; border-radius: 12px; border: 1px solid #2A303C; color: #E8EAF0; font-weight: 500; display: flex; align-items: center; text-decoration: none">Fiche du jeu</a>
+        </div>
+      </section>
+
+      <sc-for list="{{ gens }}" as="g" hint-placeholder-count="5">
+        <section id="{{g.id}}" style="display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px">
+            <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700">{{g.title}}</h2>
+            <span style="color: #9AA3B2">{{g.console}} · {{g.years}}</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 20px">
+            <sc-for list="{{ g.games }}" as="game" hint-placeholder-count="4">
+              <a href="Fiche.dc.html" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #E8EAF0">
+                <div style="aspect-ratio: 3 / 4; border-radius: 12px; background: {{game.color}}; color: {{game.ink}}; opacity: {{game.opacity}}; padding: 14px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgba(255,255,255,0.08)">
+                  <span style="align-self: flex-start; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 4px 8px; border-radius: 6px; background: rgba(0,0,0,0.22); color: #FFFFFF">{{game.consoleShort}}</span>
+                  <div>
+                    <div style="font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85">Pokémon</div>
+                    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; line-height: 1.05">{{game.name}}</div>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+                  <span style="color: #9AA3B2; font-size: 13px">{{game.year}}</span>
+                  <sc-if value="{{ game.ready }}" hint-placeholder-val="{{ true }}">
+                    <span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #17321F; color: #7EE2A0">{{game.lang}}</span>
+                  </sc-if>
+                  <sc-if value="{{ game.missing }}" hint-placeholder-val="{{ false }}">
+                    <span style="font-size: 12px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #3A2614; color: #F7B57A">ROM manquante</span>
+                  </sc-if>
+                </div>
+                <sc-if value="{{ game.hasVariants }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-size: 12px; color: #B4BCC9">+ {{game.variants}}</span>
+                </sc-if>
+              </a>
+            </sc-for>
+          </div>
+        </section>
+      </sc-for>
+
+    </main>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2080}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const g = (name, year, color, ink, cs, opts) => {
+      const o = opts || {};
+      const missing = !!o.missing;
+      return {
+        name: name, year: year, color: color, ink: ink, consoleShort: cs,
+        ready: !missing, missing: missing, opacity: missing ? 0.35 : 1,
+        lang: o.lang || 'FR', hasVariants: !!o.variants, variants: o.variants || ''
+      };
+    };
+    const gens = [
+      { id: 'gen1', short: 'Gen 1 · Game Boy', title: 'Génération 1', console: 'Game Boy', years: '1999 – 2000', games: [
+        g('Rouge', '1999', '#C62A2F', '#FFFFFF', 'GB'),
+        g('Bleu', '1999', '#2A5BD7', '#FFFFFF', 'GB'),
+        g('Jaune', '2000', '#E8B90F', '#1A1606', 'GB', { missing: true })
+      ]},
+      { id: 'gen2', short: 'Gen 2 · Game Boy Color', title: 'Génération 2', console: 'Game Boy Color', years: '2001', games: [
+        g('Or', '2001', '#B8912F', '#FFFFFF', 'GBC'),
+        g('Argent', '2001', '#8E99A8', '#FFFFFF', 'GBC'),
+        g('Cristal', '2001', '#4FA9CC', '#FFFFFF', 'GBC', { missing: true })
+      ]},
+      { id: 'gen3', short: 'Gen 3 · Game Boy Advance', title: 'Génération 3', console: 'Game Boy Advance', years: '2003 – 2005', games: [
+        g('Rubis', '2003', '#B0123A', '#FFFFFF', 'GBA'),
+        g('Saphir', '2003', '#1F4FA8', '#FFFFFF', 'GBA'),
+        g('Rouge Feu', '2004', '#E0562B', '#FFFFFF', 'GBA', { lang: 'EN (US)', variants: '1 romhack · 1 randomizer' }),
+        g('Vert Feuille', '2004', '#4F9A32', '#FFFFFF', 'GBA'),
+        g('Émeraude', '2005', '#138A5B', '#FFFFFF', 'GBA')
+      ]},
+      { id: 'gen4', short: 'Gen 4 · Nintendo DS', title: 'Génération 4', console: 'Nintendo DS', years: '2007 – 2010', games: [
+        g('Diamant', '2007', '#5F82CF', '#FFFFFF', 'DS'),
+        g('Perle', '2007', '#D59BB0', '#2A1520', 'DS'),
+        g('Platine', '2009', '#7D8590', '#FFFFFF', 'DS', { variants: '1 romhack · 1 randomizer' }),
+        g('HeartGold', '2010', '#C9A227', '#1F1805', 'DS'),
+        g('SoulSilver', '2010', '#A9B4C2', '#141A22', 'DS')
+      ]},
+      { id: 'gen5', short: 'Gen 5 · Nintendo DS', title: 'Génération 5', console: 'Nintendo DS', years: '2011 – 2012', games: [
+        g('Noir', '2011', '#2A2A2E', '#FFFFFF', 'DS'),
+        g('Blanc', '2011', '#E9E9EC', '#18181B', 'DS'),
+        g('Noir 2', '2012', '#22303F', '#FFFFFF', 'DS', { missing: true }),
+        g('Blanc 2', '2012', '#EDE4E0', '#1E1714', 'DS')
+      ]}
+    ];
+    gens.forEach((x) => {
+      const ok = x.games.filter((y) => y.ready).length;
+      x.count = ok + '/' + x.games.length;
+    });
+    return { gens: gens };
+  }
+}
+</script>
+</body>
+</html>

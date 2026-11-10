@@ -1,0 +1,42 @@
+# --- Données perso : jamais dans le repo ---
+# ROMs
+*.gb
+*.gbc
+*.gba
+*.nds
+*.zip
+*.7z
+# Patchs de romhacks
+*.ips
+*.bps
+*.ups
+*.xdelta
+*.vcdiff
+# Sauvegardes et états
+*.sav
+*.ss[0-9]
+*.ml[0-9]
+*.dsv
+roms/
+saves/
+patches/
+emulators/
+
+# --- Node / front ---
+node_modules/
+dist/
+.vite/
+*.log
+
+# --- Rust / Tauri ---
+target/
+src-tauri/target/
+src-tauri/gen/
+
+# --- Système / éditeurs ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.*
