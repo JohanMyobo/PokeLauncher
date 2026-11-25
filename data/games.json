@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "consoles": {
+    "gb": { "nom": "Game Boy", "court": "GB", "emulateur": "mgba", "extensions": ["gb"] },
+    "gbc": { "nom": "Game Boy Color", "court": "GBC", "emulateur": "mgba", "extensions": ["gbc", "gb"] },
+    "gba": { "nom": "Game Boy Advance", "court": "GBA", "emulateur": "mgba", "extensions": ["gba"] },
+    "nds": { "nom": "Nintendo DS", "court": "DS", "emulateur": "melonds", "extensions": ["nds"] }
+  },
+  "generations": [
+    { "id": 1, "titre": "Génération 1", "court": "Gen 1 · Game Boy", "console": "gb", "annees": "1999 – 2000" },
+    { "id": 2, "titre": "Génération 2", "court": "Gen 2 · Game Boy Color", "console": "gbc", "annees": "2001" },
+    { "id": 3, "titre": "Génération 3", "court": "Gen 3 · Game Boy Advance", "console": "gba", "annees": "2003 – 2005" },
+    { "id": 4, "titre": "Génération 4", "court": "Gen 4 · Nintendo DS", "console": "nds", "annees": "2007 – 2010" },
+    { "id": 5, "titre": "Génération 5", "court": "Gen 5 · Nintendo DS", "console": "nds", "annees": "2011 – 2012" }
+  ],
+  "jeux": [
+    { "id": "rouge", "nom": "Rouge", "generation": 1, "console": "gb", "annee": 1999, "couleur": "#C62A2F", "encre": "#FFFFFF", "entete": { "titres": ["POKEMON RED"] }, "dumps": [] },
+    { "id": "bleu", "nom": "Bleu", "generation": 1, "console": "gb", "annee": 1999, "couleur": "#2A5BD7", "encre": "#FFFFFF", "entete": { "titres": ["POKEMON BLUE"] }, "dumps": [] },
+    { "id": "jaune", "nom": "Jaune", "generation": 1, "console": "gb", "annee": 2000, "couleur": "#E8B90F", "encre": "#1A1606", "entete": { "titres": ["POKEMON YELLOW"] }, "dumps": [] },
+
+    { "id": "or", "nom": "Or", "generation": 2, "console": "gbc", "annee": 2001, "couleur": "#B8912F", "encre": "#FFFFFF", "entete": { "codes": ["AAU"] }, "dumps": [] },
+    { "id": "argent", "nom": "Argent", "generation": 2, "console": "gbc", "annee": 2001, "couleur": "#8E99A8", "encre": "#FFFFFF", "entete": { "codes": ["AAX"] }, "dumps": [] },
+    { "id": "cristal", "nom": "Cristal", "generation": 2, "console": "gbc", "annee": 2001, "couleur": "#4FA9CC", "encre": "#FFFFFF", "entete": { "codes": ["BYT"] }, "dumps": [] },
+
+    { "id": "rubis", "nom": "Rubis", "generation": 3, "console": "gba", "annee": 2003, "couleur": "#B0123A", "encre": "#FFFFFF", "entete": { "codes": ["AXV"] }, "dumps": [] },
+    { "id": "saphir", "nom": "Saphir", "generation": 3, "console": "gba", "annee": 2003, "couleur": "#1F4FA8", "encre": "#FFFFFF", "entete": { "codes": ["AXP"] }, "dumps": [] },
+    { "id": "rouge-feu", "nom": "Rouge Feu", "generation": 3, "console": "gba", "annee": 2004, "couleur": "#E0562B", "encre": "#FFFFFF", "entete": { "codes": ["BPR"] }, "dumps": [] },
+    { "id": "vert-feuille", "nom": "Vert Feuille", "generation": 3, "console": "gba", "annee": 2004, "couleur": "#4F9A32", "encre": "#FFFFFF", "entete": { "codes": ["BPG"] }, "dumps": [] },
+    { "id": "emeraude", "nom": "Émeraude", "generation": 3, "console": "gba", "annee": 2005, "couleur": "#138A5B", "encre": "#FFFFFF", "entete": { "codes": ["BPE"] }, "dumps": [] },
+
+    { "id": "diamant", "nom": "Diamant", "generation": 4, "console": "nds", "annee": 2007, "couleur": "#5F82CF", "encre": "#FFFFFF", "entete": { "codes": ["ADA"] }, "dumps": [] },
+    { "id": "perle", "nom": "Perle", "generation": 4, "console": "nds", "annee": 2007, "couleur": "#D59BB0", "encre": "#2A1520", "entete": { "codes": ["APA"] }, "dumps": [] },
+    { "id": "platine", "nom": "Platine", "generation": 4, "console": "nds", "annee": 2009, "couleur": "#7D8590", "encre": "#FFFFFF", "entete": { "codes": ["CPU"] }, "dumps": [] },
+    { "id": "heartgold", "nom": "HeartGold", "generation": 4, "console": "nds", "annee": 2010, "couleur": "#C9A227", "encre": "#1F1805", "entete": { "codes": ["IPK"] }, "dumps": [] },
+    { "id": "soulsilver", "nom": "SoulSilver", "generation": 4, "console": "nds", "annee": 2010, "couleur": "#A9B4C2", "encre": "#141A22", "entete": { "codes": ["IPG"] }, "dumps": [] },
+
+    { "id": "noir", "nom": "Noir", "generation": 5, "console": "nds", "annee": 2011, "couleur": "#2A2A2E", "encre": "#FFFFFF", "entete": { "codes": ["IRB"] }, "dumps": [] },
+    { "id": "blanc", "nom": "Blanc", "generation": 5, "console": "nds", "annee": 2011, "couleur": "#E9E9EC", "encre": "#18181B", "entete": { "codes": ["IRA"] }, "dumps": [] },
+    { "id": "noir-2", "nom": "Noir 2", "generation": 5, "console": "nds", "annee": 2012, "couleur": "#22303F", "encre": "#FFFFFF", "entete": { "codes": ["IRE"] }, "dumps": [] },
+    { "id": "blanc-2", "nom": "Blanc 2", "generation": 5, "console": "nds", "annee": 2012, "couleur": "#EDE4E0", "encre": "#1E1714", "entete": { "codes": ["IRD"] }, "dumps": [] }
+  ]
+}

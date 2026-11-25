@@ -4,13 +4,15 @@
 
 - [x] Maquette de l'interface (bibliothèque + fiche jeu + réglages), voir `docs/maquette/`
 - [ ] Valider la maquette et lister les modifs
-- [ ] Choisir la stack : Tauri vs Electron
-- [ ] Scaffolder l'app
+- [x] Choisir la stack : Tauri 2 + React / TypeScript
+- [x] Scaffolder l'app
 
 ## Ensuite (V1)
 
-- [ ] Scan du dossier ROMs + table des hash des 20 versions (`data/games.json`)
-- [ ] Bibliothèque classée par génération
+- [x] Scan du dossier ROMs + table des 20 versions (`data/games.json`), identification par entête
+- [ ] Compléter les hash (CRC32 / SHA-1) de mes dumps dans `data/games.json`
+- [x] Bibliothèque classée par génération
+- [ ] Fiche jeu complète (progression, variantes, sauvegardes)
 - [ ] Installation et mise à jour auto de mGBA et melonDS
 - [ ] Lancement en un clic avec la config par console
 - [ ] Sauvegardes : un dossier par jeu et par variante, backup auto avant chaque session

@@ -32,17 +32,47 @@ La maquette de l'interface (bibliothèque, fiche jeu, réglages) est dans [`docs
 
 ## Stack
 
-À choisir : **Tauri** (léger, Mac + Windows, recommandé) ou Electron. Cible principale : le Mac Mini.
+**Tauri 2** (backend Rust) + **React / TypeScript** (Vite). Cible principale : le Mac Mini, Windows en second.
+
+## Développement
+
+Prérequis : Node 20+, Rust stable ([rustup](https://rustup.rs)) et, sur macOS, les outils Xcode en ligne de commande (`xcode-select --install`).
+
+```bash
+npm install
+npm run tauri dev      # lance l'app en mode développement
+npm run tauri build    # construit l'app (.app / .dmg sur macOS)
+```
+
+Tests du cœur (scan, entêtes, catalogue), sans interface :
+
+```bash
+cd src-tauri && cargo test -p pokelauncher-core
+```
+
+Relever le CRC32 et le SHA-1 de ses ROMs pour compléter `data/games.json` :
+
+```bash
+cd src-tauri && cargo run -p pokelauncher-core --example scan -- ~/ROMs
+```
+
+## Identification des ROMs
+
+1. **Par hash** : si le SHA-1 du fichier figure dans `dumps` de `data/games.json`, la ROM est « vérifiée » (jeu, langue, révision).
+2. **Par entête** : sinon, le lanceur lit le code jeu dans l'entête (ex. `CPUF` = Platine FR) ou, pour la Gen 1, le titre interne. La langue vient de la lettre de région ; pour la Gen 1 elle reste inconnue tant que le hash n'est pas renseigné.
+
+Les `dumps` sont vides au départ : on les complète avec ses propres cartouches.
 
 ## Arborescence prévue
 
 ```
 PokeLauncher/
 ├── docs/            # maquette, notes de conception
-├── src/             # interface (à scaffolder)
-├── src-tauri/       # backend Rust si Tauri (à scaffolder)
+├── src/             # interface React (bibliothèque, fiche, réglages)
+├── src-tauri/       # app Tauri : commandes exposées à l'interface
+│   └── core/        # cœur Rust sans Tauri : catalogue, entêtes, scan, config
 └── data/
-    └── games.json   # table des 20 versions + hash attendus (à venir)
+    └── games.json   # table des 20 versions (couleurs, critères d'entête, hash connus)
 ```
 
 Les dossiers de données utilisateur (ROMs, sauvegardes, patchs, émulateurs téléchargés) vivent hors du repo.
